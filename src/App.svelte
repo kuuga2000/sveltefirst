@@ -1,10 +1,18 @@
 <script>
 	export let name;
+	export let motherearth;
+	let godname = "Zeus";
+
+	const handleClick = () => {
+		godname = "Cronos";
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Hello {motherearth}</h1>
+	<p>What is your name {godname}</p>
+	<button on:click={handleClick}>Update Name</button>
 </main>
 
 <style>
